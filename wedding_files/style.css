@@ -24,7 +24,7 @@ Contact: https://themeforest.net/user/regediter
 13 - Event Section
 14 - Google Map Section
 15 - Count Up Section
-16 - Gift Section
+16 - Customer Section
 17 - RSVP Section
 18 - Footer Section
 19 - Loader
@@ -262,7 +262,8 @@ h1,h2,h3,h4,h5,h6 {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	position: relative;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand';
+	/* font-family: 'Raleway', sans-serif; */
 }
 h1:first-child,
 h2:first-child,
@@ -321,8 +322,9 @@ footer h2 {
 .sub-heading{
 	font-size: 1.25em;
     line-height: 1.625em;
-    color: rgba(45, 44, 53, 1);
-    font-family: 'Raleway', sans-serif;
+	color: rgba(45, 44, 53, 1);
+	font-family: 'Quicksand';
+    /* font-family: 'Raleway', sans-serif; */
 }
 .blockquote {
     padding-left: 1rem;
@@ -424,7 +426,7 @@ footer h2 {
     top: 3rem;   
 }
 .slider-img-holder{
-	background: url(../img/hearth_center.svg) no-repeat center center transparent; 
+	background: url(hearth_center.svg) no-repeat center center transparent; 
 	background-size: contain;
     margin: 0 auto;
     opacity: 0.3;
@@ -486,8 +488,9 @@ footer h2 {
     font-weight: 300;
     line-height: 1.625em;
     margin-bottom: 1rem;
-    margin-top: 1rem;
-    font-family: 'Raleway', sans-serif;
+	margin-top: 1rem;
+	font-family: 'Quicksand';
+    /* font-family: 'Raleway', sans-serif; */
 }
 .social-link {
     padding: 0;
@@ -521,14 +524,15 @@ footer h2 {
 	background: url("../img/comment_bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 }
 #comment h3{
-	font-weight: 200;
+	font-weight: 100;
 }
 #comment p.heading,
 #comment-2 p.heading{
 	color: #fff;
     font-size: 1.953em;
-    line-height: 1.625em;
-    font-family: 'Raleway', sans-serif;
+	line-height: 1.625em;
+	font-family: 'Quicksand';
+    /* font-family: 'Raleway', sans-serif; */
     font-weight: 200;
 }
 
@@ -715,8 +719,9 @@ footer h2 {
     font-weight: 300;
     line-height: 1.625em;
     margin-bottom: 19px;
-    margin-top: 19px;
-    font-family: 'Raleway', sans-serif;
+	margin-top: 19px;
+	font-family: 'Quicksand';
+    /* font-family: 'Raleway', sans-serif; */
 }
 
 .people-img{
@@ -937,33 +942,16 @@ footer h2 {
     width: 100%;
 }
 
-
-/* 15 Count Up Section
+/* 16 Customer Section
 ==================================================== */
-#countup{
-	background: transparent;
-	background-image: url(../img/countup_bg.png);
-}
-.counter-number{
-	font-size:2.441em;
-	font-weight:normal;
-	line-height: 1.3em;	
-	margin-bottom: 1rem;
-	font-family: 'Dancing Script', cursive;
-}
-
-
-
-/* 16 Gift Section
-==================================================== */
-#gift p{
+#customer p{
 	margin-bottom:2em;
 }
-#gift h4{
+#customer h4{
 	font-weight: 300;
 }
 
-#gift-carousel .item{
+#customer-carousel .item{
 	background: none repeat scroll 0 0 #fff;
     border: 1px solid #cecece;
     border-radius: 3px;
@@ -982,7 +970,7 @@ footer h2 {
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
     background: none repeat scroll 0 0 #de037f;    
 }
-#gift-carousel i{
+#customer-carousel i{
 	color: #ececec;
     display: block;
     font-size: 50px;
@@ -994,6 +982,10 @@ footer h2 {
 }
 .customNavigation a{
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.customer-img{
+
 }
 
 
@@ -1205,155 +1197,6 @@ select.form-control:not([size]):not([multiple]) {
 	color: #de037f;
 	padding-left: .5rem;
 }
-
-
-/* 21 Blog Page
-==================================================== */
-#blog-header{
-	background-image: url(../img/countup_bg.png);
-}
-#blog-header h1{
-	font-family: 'Dancing Script', cursive;
-}
-#blog-header{
-	padding: 4rem 0;
-}
-#sidebar-wrap{
-	padding: 8rem 0;
-}
-.post{
-
-}
-.post-date{
-	text-align: center;
-}
-.post-date .day{
-	display: block;
-	padding: 3px;
-}
-.post-date .month{
-	display: block;
-    background: #fff;
-    color: #de037f;
-    padding: 0px 5px;
-    text-transform: capitalize;
-    border-top: 1px solid #d2d2d2;
-}
-.post-meta{
-	margin-bottom: 1rem;
-	font-weight: 300;
-}
-.post-meta span{
-	margin-right: 10px;
-	color: #838383;
-}
-.post-meta span i{
-	margin-right: 5px;
-	color: #838383;
-}
-.post-img{
-	margin-bottom: 3rem;
-}
-.post-img img{
-	border-radius: 3px;
-}
-.post-content{
-	border-bottom: 1px solid #f2f2f2;
-}
-.pagination {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-.page-item.active .page-link {
-    background-color: #de037f;
-    border-color: #de037f;
-}
-.page-link {
-    color: #de037f;
-}
-.page-link:focus,
-.page-link:hover {
-    color: #fff;
-    background-color: #d2d2d2;
-}
-.search-form{
-	border: 1px solid #d2d2d2;
-    border-radius: 3px;
-    height: 40px;
-}
-.search-form .form-control{
-	font-weight: 300;
-	border: none;
-}
-.search-form .form-control:focus{
-	-webkit-box-shadow: none;
-	        box-shadow: none;
-}
-.search-btn{
-	color: #fff;
-	padding: 5px 12px;
-	background: #de037f;
-}
-#post-widget{
-	list-style: none;
-	padding: 0;
-}
-#post-widget .post-thumbnail{
-	float: left;
-    border-radius: 3px;
-    margin-right: 1rem;
-}
-#post-widget .post-thumbnail img{
-	height: 50px;
-    max-width: 100%;
-    border-radius: 3px;
-}
-#post-widget .post-title{
-	color: rgb(45, 44, 53);
-	font-weight: 400;
-}
-.share-holder{
-	margin-bottom: 1rem;
-}
-.comment{
-	
-}
-.comment-list{
-	list-style: none;
-	padding: 0;
-}
-.comment-img{
-	height: 4rem;
-    margin-right: 2rem;
-    width: auto;
-    border-radius: 3px;
-}
-.comment-content{
-	border-left: 2px solid #d2d2d2;
-    padding: 1rem;
-    border-radius: 3px;
-
-}
-.comment-reply{
-	margin-left: 2rem;
-}
-.comment-reply-link{
-	-webkit-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
-}
-.comment-reply-link:hover, .comment-reply-link:focus{
-	color: rgb(45, 44, 53);
-}
-.commented-date{
-	font-size: 0.8rem;
-	color: #6b6b6b;
-}
-.comment-icon{
-	color: #de037f;
-}
-
 
 /* 22 Boxed Layout
 ==================================================== */

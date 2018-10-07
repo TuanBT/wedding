@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Basic -->
+	<meta name="keywords" content="HTML5 Template">
+	<meta name="description" content="CH">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<!-- Page Title -->
+	<title>Trang cầu hôn Tuân</title>
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<style>
+		body {
+			margin: 0;
+		}
+
+		.main-area {
+			color: white;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 30px;
+			text-align: center;
+			z-index: 999;
+		}
+
+		.question-content {
+			transition: all 0.5s ease;
+			background: #f1c40f;
+			height: calc(50%);
+			width: 90%;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-left: 5%;
+			padding-right: 5%;
+			cursor: default;
+		}
+
+		.question-content:hover {
+			background: #f39c12;
+		}
+
+		.answer-area {
+			position: absolute;
+			height: calc(50%);
+			top: calc(50%);
+			width: 100%;
+			cursor: pointer;
+		}
+
+		.answer-area .yes-anwser {
+			transition: all 0.5s ease;
+			background: #2ecc71;
+			float: right;
+			width: 50%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.answer-area .yes-anwser:hover {
+			background: #27ae60;
+		}
+
+		.answer-area .no-anwser {
+			transition: all 0.5s ease;
+			background: #e74c3c;
+			float: left;
+			width: 50%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.answer-area .no-anwser:hover {
+			background: #c0392b;
+		}
+	</style>
+
+	<script>
+		var step = -1;
+
+		var q0y = 'Trang có nhớ ngày anh tỏ tình không?';
+		var q0n = 'Bày đặt chọn No. Vẫn bắt đầu nhé.</br>Trang có nhớ ngày anh tỏ tình không?';
+
+		var q1y = 'Nhớ rồi thì là ở trên xe buýt đúng không?';
+		var q1n = 'Là ngày 6/1/2014, trên xe buýt đó, nhớ ra chưa?';
+
+		var q2y = 'Vậy có nhớ anh nói gì không?';
+		var q2n = 'Là trên xe buýt mà...</br>rồi có nhớ lúc đó anh nói gì không?';
+
+		var q3y = 'Nhớ rồi thì biết hôm nay anh sẽ nói gì không?';
+		var q3n = 'Lúc đó anh run nên cũng quên rồi,</br>nhưng em biết hôm nay anh sẽ nói gì không?';
+
+		var q4y = 'Quá dễ để biết đúng không?';
+		var q4n = 'Chắc giả bộ chứ gì?';
+
+		var q5y = 'Vậy giờ anh sẽ bắt đầu nhé?';
+		var q5n = 'Kệ đi, vậy giờ anh bắt đầu nhé?';
+
+		var q6y = 'Em muốn anh nói vòng vèo không?';
+		var q6n = 'Thôi mà, để anh nói đi.</br>Giờ em muốn anh nói vòng vèo không?';
+
+		var q7y = 'Vòng vèo lâu lắm em à?</br>Nói luôn nhé?';
+		var q7n = 'Ok, vậy nói luôn nhé?';
+
+		var q8y = 'EM KẾT HÔN VỚI ANH NHÉ?';
+		var q8n = 'Cái này không cho chọn No.</br>EM KẾT HÔN VỚI ANH NHÉ?';
+
+		var q9y = 'Cảm ơn em! Giờ xem nhẫn nhé?';
+		var q9n = 'Đăng ký rồi, nên câu này hỏi tượng trưng thôi.</br>Cảm ơn em! Giờ xem nhẫn nhé?';
+
+		var q10y = '💍';
+		var q10n = '💍';
+
+		var qy = [q0y, q1y, q2y, q3y, q4y, q5y, q6y, q7y, q8y, q9y, q10y];
+		var qn = [q0n, q1n, q2n, q3n, q4n, q5n, q6n, q7n, q8n, q9n, q10n];
+
+
+		function funct(choise) {
+			step++;
+			if (choise == 'y') {
+				document.getElementById('qct').innerHTML = qy[step];
+			} else if (choise == 'n') {
+				document.getElementById('qct').innerHTML = qn[step];
+			}
+
+			if(step == 10){
+				document.getElementById("aa").style.display = "none";
+				document.getElementById('qct').style.fontSize = "80px";
+				document.getElementById('qct').style.height =  "calc(100%)";
+				document.getElementById('qct').style.background = "#000";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="main-area">
+		<div id="qct" class="question-content">Bắt đầu câu chuyện nhé?</div>
+		<div id="aa" class="answer-area">
+			<div class="yes-anwser" onclick="funct('y')">yes</div>
+			<div class="no-anwser" onclick="funct('n')">no</div>
+		</div>
+	</div>
+</body>
+
+</html>

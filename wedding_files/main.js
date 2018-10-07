@@ -125,16 +125,16 @@ $(document).ready(function() {
 		  // Display the result in the element with class="countdown"
 		  document.getElementById('countdown').innerHTML = 
 		  "<ul>" + 
-			  "<li>" + "<h2>" + days + "</h2>" + "<h4>days</h4>" + "</li>" +
-			  "<li>" + "<h2>" + hours + "</h2>" + "<h4>hours</h4>" + "</li>"+
-			  "<li>" + "<h2>" + minutes + "</h2>" + "<h4>min</h4>" + "</li>"+
-			  "<li>" + "<h2>" + seconds + "</h2>" + "<h4>sec</h4>"+"</li>"+			  
+			  "<li>" + "<h2>" + days + "</h2>" + "<h4>ngày</h4>" + "</li>" +
+			  "<li>" + "<h2>" + hours + "</h2>" + "<h4>giờ</h4>" + "</li>"+
+			  "<li>" + "<h2>" + minutes + "</h2>" + "<h4>phút</h4>" + "</li>"+
+			  "<li>" + "<h2>" + seconds + "</h2>" + "<h4>giây</h4>"+"</li>"+			  
 		  "</ul>";
 		  
 		  // If the count down is finished, write some text 
 		  if (distance < 0) {
 		  	clearInterval(x);
-		  	document.getElementById('countdown').innerHTML = "EXPIRED";
+		  	document.getElementById('countdown').innerHTML = "Tới ngày";
 		  }
 		}, 1000);
 	}
@@ -161,39 +161,6 @@ $(document).ready(function() {
 		($(window).scrollTop() > videoHeight) ? $('#primary-navbar-video').addClass('affix') : $('#primary-navbar-video').removeClass('affix');		
 				
 	});
-
-	/* Count Up Plugin Settings
-	-----------------------------------------------------------------------------------*/
-
-	var options = {
-		useEasing : true,
-		useGrouping : true,
-		separator : ' ',
-		decimal : '.',
-		prefix : '',
-		suffix : ''
-	};
-
-	// Set the count up numbers
-	var countup_1 = new CountUp("counter-1", 0, 4500, 0, 2.5, options);
-	var countup_2 = new CountUp("counter-2", 0, 153, 0, 2.5, options);
-	var countup_3 = new CountUp("counter-3", 0, 49, 0, 2.5, options);
-	var countup_4 = new CountUp("counter-4", 0, 978, 0, 2.5, options);	
-	
-	var $CounterStart = $('#countup' );
-
-	// If scroll get to the waypoint, the Count up start
-	$CounterStart.waypoint(function(direction) {
-		if (direction === 'down') {
-			countup_1.start();
-			countup_2.start();
-			countup_3.start();
-			countup_4.start();
-		}
-	}, {
-		offset: '100%'
-	});
-
 
 	/* Isotope Plugin Settings
 	-----------------------------------------------------------------------------------*/
@@ -292,7 +259,7 @@ $(document).ready(function() {
 	/* Owl Carousel
 	-----------------------------------------------------------------------------------*/	
 
-	$('#gift-carousel').owlCarousel({
+	$('#customer-carousel').owlCarousel({
 		loop:true,
 		margin:10,
 		touchDrag: true,
